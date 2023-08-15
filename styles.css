@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--theme-bg: #050913;
+	--link1: #5EC900;
+	--link1-hover: #4FA801;
+	--link2: #6600ff;
+	--link2-hover: #5700D9;
+	--text1: #6600ff;
+	--white:#ffffff;
+}
+
+html,
+body {
+	width: 100vw;
+	overflow-x: hidden;
+	font-size: 100%;
+}
+
+.header-logo {
+	color: var(--link2);
+	margin-block: auto;
+	margin-left: 10px;
+}
+
+div.header {
+	height: 10vh;
+	width: 100vw;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	grid-template-rows: repeat(1, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.header-link {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.header-link a {
+	text-decoration: none;
+	color: var(--white);
+	font-family: Century Gothic;
+	font-weight: 800;
+	font-size: medium;
+}
+.header-link a:hover{
+	color: var(--link1);
+}
+
+.content {
+	margin-top: 10vh;
+}
+
+.hero {
+	height: 80vh;
+	width: 100vw;
+	background: url('https://images.unsplash.com/photo-1688734988442-e8156e8a7901?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*aspect-ratio: 1 / 0.8;
+	background-size: 100vw ,80vh;*/
+	background-position-x: center;
+}
+
+.hero-span1 {
+	white-space: nowrap;
+	font-size: calc(50px + 5vw);
+	font-weight: 900;
+	color: var(--text1);
+}
+
+.hero-span2 {
+	white-space: nowrap;
+	font-size: calc(50px + 5.2vw);
+	font-weight: 900;
+	color: var(--text1);
+}
+
+.row1 {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.row1 h1 {
+	font-size: 85px;
+}
+
+@media only screen and (max-width: 800px) {
+	.hero {
+		/*background-size: 100vw,auto;*/
+		height: fit-content;
+	}
+}
+
+@media only screen and ((max-width: 1279px)) {
+	.row1 h1 {
+		font-size: 52px;
+	}
+
+}
+
+@media only screen and ((max-width: 767px)) {
+	.row1 h1 {
+		font-size: 9.2vw;
+
+	}
+}
