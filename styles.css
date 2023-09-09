@@ -12,7 +12,7 @@
 	--link2-hover: #5700D9;
 	--text1: #6600ff;
 	--white: #ffffff;
-	--large-text: calc(50px + 5vw);
+	--large-text: calc(50px + 4rem);
 }
 
 html,
@@ -83,14 +83,14 @@ div.header {
 .hero-span1 {
 	margin-top: 80vh;
 	white-space: nowrap;
-	font-size: calc(50px + 5vw);
+	font-size: calc(50px + 4rem);
 	font-weight: 900;
 	color: var(--text1);
 }
 
 .hero-span2 {
 	white-space: nowrap;
-	font-size: calc(50px + 5.2vw);
+	font-size: calc(50px + 4rem);
 	font-weight: 900;
 	color: var(--text1);
 }
