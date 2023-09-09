@@ -5,19 +5,22 @@
 
 :root {
 	--theme-bg: #050913;
+	--theme-bg-grey: #1c2028;
 	--link1: #5EC900;
 	--link1-hover: #4FA801;
 	--link2: #6600ff;
 	--link2-hover: #5700D9;
 	--text1: #6600ff;
-	--white:#ffffff;
+	--white: #ffffff;
+	--large-text: calc(50px + 5vw);
 }
 
 html,
 body {
-	width: 100vw;
+	width: 100%;
 	overflow-x: hidden;
 	font-size: 100%;
+	background-color: var(--theme-bg);
 }
 
 .header-logo {
@@ -28,8 +31,9 @@ body {
 
 div.header {
 	height: 10vh;
-	width: 100vw;
-	background: transparent;
+	width: 100%;
+	z-index: 10;
+	background: #e2e2e2b6;
 	position: fixed;
 	top: 0;
 	display: grid;
@@ -37,15 +41,16 @@ div.header {
 	grid-template-rows: repeat(1, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+	transition: all .1s;
 }
 
 .header-link {
 	display: flex;
 	flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+
 }
 
 .header-link a {
@@ -55,12 +60,13 @@ div.header {
 	font-weight: 800;
 	font-size: medium;
 }
-.header-link a:hover{
+
+.header-link a:hover {
 	color: var(--link1);
 }
 
 .content {
-	margin-top: 10vh;
+	margin-top: 0vh;
 }
 
 .hero {
@@ -75,6 +81,7 @@ div.header {
 }
 
 .hero-span1 {
+	margin-top: 80vh;
 	white-space: nowrap;
 	font-size: calc(50px + 5vw);
 	font-weight: 900;
@@ -98,6 +105,125 @@ div.header {
 
 .row1 h1 {
 	font-size: 85px;
+}
+
+.space10 {
+	width: 100%;
+	height: 10vh;
+	color: var(--theme-bg);
+}
+
+.space10T {
+	width: 100%;
+	height: 10vh;
+	color: transparent;
+}
+
+.card {
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	min-width: 200px;
+	width: calc(33%);
+	min-height: 200px;
+	transition: all .6s;
+	text-align: center;
+}
+
+.card:hover {
+	background-color: #6600ff;
+}
+
+.card img {
+	width: 100%;
+	height: 100px;
+
+}
+
+.card p {
+	text-shadow: #f1f1f1;
+
+}
+
+.card h2 {
+	color: #fdfdfd;
+	text-align: center;
+}
+
+.r2-head {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #ffffff;
+	font-size: medium;
+}
+
+.highlight {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 15em;
+	font-size: var(--large-text);
+	color: hsla(0, 0%, 100%, .05);
+	background-image: radial-gradient(closest-side, var(--link1-hover) 40%, transparent 0);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 400px 400px;
+	transition: all .1s;
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+
+.scroollingtext {
+	animation: scrollText 15s infinite linear;
+	font-size: calc(50px + 5vw);
+	color: #ffffff;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: 'Museo';
+	font-weight: 300;
+}
+
+.scroollingtext2 {
+	margin-top: 50px;
+	animation: scrollText 10s linear infinite; 
+	color: #ffffff;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: 'Museo';
+	font-weight: 300;
+}
+
+
+.flow_box {
+	margin-right: 10px;
+	padding: 10px 15px 11px;
+	color: #ffffff;
+	background-color: var(--theme-bg-grey);
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-ms-border-radius: 8px;
+	display: inline-block;
+}
+
+.flow_cont {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+@keyframes scrollText {
+	from {
+		transform: translateX(100%);
+	}
+
+	 to {
+		transform: translateX(-100%);
+	} 
 }
 
 @media only screen and (max-width: 800px) {
