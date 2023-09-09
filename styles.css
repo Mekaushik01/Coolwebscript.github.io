@@ -24,7 +24,7 @@ body {
 }
 
 .header-logo {
-	color: var(--link2);
+	color: var(--link1);
 	margin-block: auto;
 	margin-left: 10px;
 }
