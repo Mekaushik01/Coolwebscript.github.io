@@ -32,7 +32,29 @@ window.onscroll = function () {
   } else {
     document.getElementById("header_").style.top = "-10vh";
   }
-  // prevScrollpos = currentScrollPos;
- // console.log(stat)
-  console.log(currentScrollPos == 0)
-}
+  }
+
+  // scroolspy
+    // Add scroll event listener
+    window.addEventListener("scroll", () => {
+      const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("#navbar a");
+      let current = "";
+      console.log("hi")
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - sectionHeight / 2) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      // Add the "active" class to the current navigation link
+      navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").slice(1) === current) {
+          link.classList.add("active");
+        }
+      });
+    });
