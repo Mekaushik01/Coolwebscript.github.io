@@ -14,24 +14,34 @@
 	<div class="content">
 		<div class="header" id="header_">
 			<div class="header-logo">
-				Logo
+				<img src="logo.png" alt="">
 			</div>
-			<div class="header-link">
-				<a href="#">Home</a>
-				<a href="#">Tab1</a>
-				<a href="#">Contact Us</a>
-				<a href="#">Bottom</a>
+			<div id="navbar" class="header-link">
+				<a href="#hero-section">Home</a>
+				<a href="#about-section">About</a>
+				<a href="#services-section">Services</a>
+				<a href="#contact-section">contact Us</a>
 			</div>
 		</div>
-		<div class="hero">
+		<section id="hero-section">
 			<div class="space10T"></div>
-			<h1>
-				<Span class="hero-span1">Turn</Span><br>
-				<Span class="hero-span1">Your</Span><br>
-				<Span class="hero-span1">Buisness</Span><br>
-				<Span class="hero-span2">Online</Span>
-			</h1>
-		</div>
+			<div class="hero">
+				<div class="hero-text">
+					<div class="text-div">
+						<h1>
+							<Span class="hero-span1 slide-ani">Web Development</Span><br>
+							<Span class="hero-span2 slide-ani">Your Gateway to an Online Presence</Span><br>
+						</h1>
+					</div>
+					<div class="button-div">
+						<button class="con-btn">Lets Online</Button>
+					</div>
+				</div>
+				<div class="hero-img">
+				</div>
+			</div>
+		</section>
+		<div class="space5"></div>
 		<div class="flow_cont scroollingtext2">
 			<div class="flow_box">Hi</div>
 			<div class="flow_box">i</div>
@@ -39,57 +49,81 @@
 			<div class="flow_box">Kaushik</div>
 			<div class="flow_box">Saha</div>
 		</div>
-
-		<div class="space10"></div>
-		<div class="row1">
-			<div class="card">
-				<div class="card-image">
-					<img src="https://unsplash.it/1920/1080" alt="none">
+		<div class="space5"></div>
+		<section id="about-section">
+			<div class="about">
+				<div class="r2-head">What We Do</div>
+				<div class="highlight"> WE CAN CREATE YOUR ONLINE PRESENCE</div>
+			</div>
+		</section>
+		<section id="services-section">
+			<div class="services">
+				<div class="card">
+					<div class="card-image">
+						<img src="https://unsplash.it/1920/1080" alt="none">
+					</div>
+					<div class="card-content">
+						<div class="card-heading">
+							<H2>Heading1</H2>
+						</div>
+						<div class="card-content">
+							<p>this is content</p>
+						</div>
+					</div>
 				</div>
-				<div class="card-heading">
-					<H2>Heading1</H2>
+				<div class="card">
+					<div class="card-image">
+						<img src="https://unsplash.it/1920/1080" alt="none">
+					</div>
+					<div class="card-content">
+						<div class="card-heading">
+							<H2>Heading1</H2>
+						</div>
+						<div class="card-content">
+							<p>this is content</p>
+						</div>
+					</div>
 				</div>
-				<div class="card-content">
-					<p>this is content</p>
+				<div class="card">
+					<div class="card-image">
+						<img src="https://unsplash.it/1920/1080" alt="none">
+					</div>
+					<div class="card-content">
+						<div class="card-heading">
+							<H2>Heading1</H2>
+						</div>
+						<div class="card-content">
+							<p>this is content</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="card">
-				<div class="card-image">
-					<img src="https://unsplash.it/1920/1080" alt="none">
-				</div>
-				<div class="card-heading">
-					<H2>Heading1</H2>
-				</div>
-				<div class="card-content">
-					<p>this is content</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="card-image">
-					<img src="https://unsplash.it/1920/1080" alt="none">
-				</div>
-				<div class="card-heading">
-					<H2>Heading1</H2>
-				</div>
-				<div class="card-content">
-					<p>this is content</p>
-				</div>
-			</div>
+		</section>
+		<div class="scroollingtext">
+			Scrolling text. Scrolling text.
 		</div>
-		<div class="space10"></div>
-		<div class="row2">
-			<div class="r2-head">What We Do</div>
-			<div class="highlight">  WE CAN CREATE YOUR ONLINE PRESENCE</div>
-		</div>
-		<div class="space10"></div>
-		<div class="row3">
-			<div class="scroollingtext">
-				Scrolling text. Scrolling text.
+		<section id="contact-section">
+			<div class="contact">
+				<div class="contact-header">
+					Contact us
+				</div>
+				<div class="main-contact-form">
+					<div class="contact-card">
+						<div class="contact-frm-title">
+							Get in Touch
+						</div>
+						<form class="contact-form" id="con-frm">
+							<input type="text" placeholder="Name" id="con-name">
+							<input type="text" placeholder="Message" id="con-mes">
+							<input type="button" onsubmit="" class="con-btn" value="Submit">
+						</form>
+					</div>
+				</div>
 			</div>
+		</section>
+		<div class="footer">
+
 		</div>
-
-
-
 	</div>
 </body>
 
